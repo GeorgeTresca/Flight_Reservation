@@ -1,0 +1,44 @@
+
+//plugins {
+//    id 'java'
+//}
+//
+//group = 'org.example'
+//version = '1.0-SNAPSHOT'
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//plugins{
+//    id 'java'
+//}
+
+
+dependencies {
+//    implementation project(path: ':')
+//    testImplementation platform('org.junit:junit-bom:5.9.1')
+//    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.23.0'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.23.0'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.45.1.0'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.32'
+    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.32'
+    implementation 'org.hibernate:hibernate-core:5.6.4.Final'
+    implementation 'org.hibernate:hibernate-entitymanager:5.6.4.Final'
+    implementation 'org.hibernate:hibernate-java8:5.6.4.Final'
+    implementation 'org.projectlombok:lombok:1.18.30'
+    implementation group: 'com.zsoltfabok', name: 'sqlite-dialect', version: '1.0'
+    implementation project (':FirmaModel')
+
+
+
+}
+
+
+
+
+
+test {
+    useJUnitPlatform()
+}

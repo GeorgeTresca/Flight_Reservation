@@ -1,0 +1,8 @@
+rootProject.name = 'firma_server_client'
+include 'FirmaModel'
+include 'FirmaPersistence'
+include 'FirmaServer'
+include 'FirmaService'
+include 'FirmaNetworking'
+include 'FirmaClient'
+
